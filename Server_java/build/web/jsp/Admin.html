@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Admin</title>
+        <!-- //custom-theme  -->
+        <link rel="stylesheet" href="css/admin.css">
+        <!-- font-awesome icons -->
+        <link rel="stylesheet" href="css/font-awesome.css"> 
+    </head>
+    <body>
+        <br><br><br>
+        <div class="menu">
+            <ul>
+                <!--<li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Diễn đàn</a></li>-->
+                <li><a href="#">List Users</a></li>
+                <li><a href="#">List Devices</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        <div class="table-layout">
+            <table border ='4' cellspacing ='5' cellpadding ='10'>
+                <caption>List Devices</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Status</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>License</th>
+                    <th>Kind</th>
+                </tr>
+                <script type="text/javascript">
+                    var count = 0;
+                    var str = ["Nguyen Tu Ngoc", "Le Hoang Huynh", "Nguyen Manh Thien","Nguyen Hoang Thong","Do Van Hao","Trieu Quang Minh","Cao Manh Quyet","Nguyen Ngoc Son"];
+                    var link = ["https://www.facebook.com/tu.ngoc.7587370", "https://www.facebook.com/profile.php?id=100008272292355", "https://www.facebook.com/asdcxsd","https://www.facebook.com/hoang.thongnguyen.06?ref=br_rs","https://www.facebook.com/an.mai.9887117","https://www.facebook.com/tqm2998","https://www.facebook.com/manhquyet.cao","https://www.facebook.com/profile.php?id=100008618530932"];
+                    var gender = "Male";
+                    var id = ['1','2','3','4','5','6','7','8'];
+                    var status = ['0','0','1','0','1','1','1','0'];
+                    for (count = 0; count < 8; count++)
+                    {
+                        document.write("<tr><td><a href='" + link[count] + "'>"+str[count]+"</a></td>");
+                        document.write("<td><a href='#' onclick = toggleButton("+id[count]+") id = "+id[count]+">");
+                        if(status[count] === '1')
+                        {
+                            document.write("On");
+                        }
+                        else
+                        {
+                            document.write("Off");
+                        }
+                        document.write("</a></td>");
+                        document.write("<td>Kind</td>");
+                        document.write("<td>A good boy</td>");
+                        document.write("<td>Acceped</td>");
+                        document.write("<td>"+gender+"</td></tr>");
+                    }
+                </script>
+            </table>
+        </div>
+    </body>
+    <script>
+        function toggleButton(id)
+        {
+            var button = document.getElementById(id);
+            
+            if(button.value === "On")
+            {
+                button.innerHTML = "Off";
+            }
+            else
+            {
+                button.innerHTML = "On";
+            }
+        }
+    </script>
+</html>

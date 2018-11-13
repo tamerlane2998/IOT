@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!-- //custom-theme  -->
+        <link rel="stylesheet" href="public_html/css/style.css">
+        <!-- font-awesome icons -->
+        <link href="public_html/css/font-awesome.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div class="login-form w3_form">
+            <div class="login-title w3_title">
+                <br><br>
+            </div>
+            <div class="login w3_login">
+                <h2 class="login-header w3_header">Log in</h2>
+                <div class="w3l_grid">
+                    <form id="hello0" name="hello" method="post"  action="/Server_java/hello.action">
+                        <table class="wwFormTable">
+                            <tr> 
+                                <td class="tdLabel"><label for="Welcome_password" class="label">Password:</label></td>
+                                <td><input type="password" name="password" id="Welcome_password"/></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><div align="right"><input type="submit" id="hello" value="Submit"/>
+                                    </div></td>
+                            </tr>
+                        </table>
+                    </form>
+
+                    <div class="second-section w3_section">
+                        <div class="bottom-header w3_bottom">
+                            <h3>OR</h3>
+                        </div>
+                    </div>
+
+                    <div class="bottom-text w3_bottom_text">
+                        <p>No account yet?<a href="Signup.html">Signup</a></p>
+                        <h4> <a href="#">Forgot your password?</a></h4>
+                    </div>
+
+                </div>
+            </div>
+            <script>
+                function request()
+                {
+                    alert("Clicked");
+                }
+            </script>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,2 @@
+1.Download xampp and install xampp.
+2.Coppy folder testweb into directory: xampp/mysql/data.
